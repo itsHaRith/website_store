@@ -1,0 +1,513 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9F5F0;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+    background-color: #FFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #B88E2F;
+}
+
+nav ul {
+    
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+.icons span img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('images/a11f805aade2224f1d6658764a2395df.jpg'); /* Set the background image */
+    background-size: cover;  /* Ensure the image covers the full section */
+    height: 100vh;  /* Make the banner section take full viewport height */
+    padding:  20px; /* Adjust padding as needed */
+   
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+    background-color:#FFF3E3;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    height:400px;  /* Set a fixed height */
+  
+
+}
+
+
+.banner h2 {
+    color: #B88E2F;
+    font-weight: bold;
+    margin-bottom: 10px;  /* Adjusted margin */
+    font-size: 52px;
+
+}
+
+.banner p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.small-text {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.banner button {
+    background-color: #B88E2F;
+    color: white;
+    padding: 25px 70px;
+    border: none;
+    cursor: pointer;
+    }
+
+    .banner button{
+        font-family: Poppins;
+        font-size: 25px;
+    }
+/* Categories Section */
+.categories {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.categories p {
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.category {
+    flex: 1;
+    text-align: center;
+    background-color: #F9F5F0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.category p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Products Section */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  .products {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .products h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+
+  .product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .product {
+    flex: 1;
+    max-width: 22%;
+    position: relative;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px; /* ثابت لكل بطاقة */
+  }
+  .product:hover {
+    transform: translateY(-5px);
+  }
+
+  .product img {
+    width: 100%;
+    height: 200px;  /* حجم موحّد للصور */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .product:hover .product-overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .product-overlay button {
+    background-color: #B88E2F;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .product-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .product-actions span {
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .discount,
+  .new-tag {
+    position: absolute;
+    top: 10px;
+    padding: 5px 12px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .discount {
+    left: 10px;
+    background-color: #E97171;
+  }
+
+  .new-tag {
+    right: 10px;
+    background-color: #2EC1AC;
+  }
+
+  .product-name {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+
+  .product-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0 20px;
+    color: #B88E2F;
+  }
+
+  .show-more {
+    margin-top: 40px;
+    background-color: white;
+    color: #B88E2F;
+    padding: 12px 30px;
+    border: 2px solid #B88E2F;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+/* Inspiration Section */
+.inspiration {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .inspiration-text {
+    flex: 1;
+    max-width: 30%;
+  }
+  
+  .inspiration-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .inspiration-text p {
+    margin-bottom: 20px;
+    color: #777;
+    line-height: 1.5;
+  }
+  
+  .inspiration-text button {
+    padding: 10px 20px;
+    background-color: #D9A31B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .inspiration-grid {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .inspiration-item {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .inspiration-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .inspiration-overlay {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .inspiration-overlay h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .inspiration-overlay p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+    margin-top: 5px;
+  }
+  
+footer {
+    background: #FFF;
+    padding: 40px 5%;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.footer-left {
+    max-width: 250px;
+}
+
+.footer-left h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer-links, .footer-help, .newsletter {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h4, .footer-help h4, .newsletter h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #888;
+}
+
+.footer-links ul, .footer-help ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li, .footer-help ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a, .footer-help ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer-links ul li a:hover, .footer-help ul li a:hover {
+    color: #B88E2F;
+}
+
+.newsletter input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.newsletter button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.newsletter button:hover {
+    color: #B88E2F;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #ddd;
+}
+@media (max-width: 992px) {
+    .inspiration {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .inspiration-text {
+      max-width: 100%;
+    }
+  
+    .inspiration-grid {
+      flex-direction: column;
+    }
+  
+    .inspiration-item img {
+      height: 300px;
+    }
+  
+    .inspiration-overlay {
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      max-width: 90%;
+      padding: 10px 15px;
+    }
+  
+    .inspiration-overlay h4 {
+      font-size: 0.9rem;
+    }
+  
+    .inspiration-overlay p {
+      font-size: 1.1rem;
+    }
+  }
+  
